@@ -57,6 +57,10 @@ app.post('/process-array', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.send('API is live. Use POST /process-array with JSON array.');
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
